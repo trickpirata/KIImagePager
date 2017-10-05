@@ -23,5 +23,6 @@
   },
   "source_files": "KIImagePager/KIImagePager/*.{h,m}",
   "resources": "KIImagePager/KIImagePager/*.png",
-  "requires_arc": true
+  "requires_arc": true,
+  "dependency": "SDWebImage"
 }

@@ -11,9 +11,7 @@
 #define kOverlayHeight      15
 
 #import "KIImagePager.h"
-
-@interface KIImagePagerDefaultImageSource : NSObject <KIImagePagerImageSource>
-@end
+#import <SDWebImage/UIImageView+WebCache.h>
 
 @interface KIImagePager () <UIScrollViewDelegate>
 {
@@ -88,25 +86,10 @@
     }
     [self initializeCaption];
 
-    if(!self.imageSource)
-    {
-        self.imageSource = [[self class] defaultDataSource];
-    }
+
 
     [self loadData];
 }
-
-
-+ (id<KIImagePagerImageSource>)defaultDataSource {
-    static KIImagePagerDefaultImageSource *_defaultDataSource = nil;
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        _defaultDataSource = [KIImagePagerDefaultImageSource new];
-    });
-
-    return _defaultDataSource;
-}
-
 
 - (UIColor *) randomColor
 {
@@ -217,23 +200,9 @@
 
                 // Asynchronously retrieve image
                 NSURL * imageUrl  = [[aImageUrls objectAtIndex:i] isKindOfClass:[NSURL class]] ? [aImageUrls objectAtIndex:i] : [NSURL URLWithString:(NSString *)[aImageUrls objectAtIndex:i]];
-
-                //image source is responsible for image retreiving/caching, etc...
-                [self.imageSource imageWithUrl:imageUrl
-                                    completion:^(UIImage *image, NSError *error)
-                 {
-                     if(!error) [imageView setImage:image];//should we handle error?
-                     else [imageView setImage:nil];
-
-                     [imageView setContentMode:[_dataSource contentModeForImage:i inPager:self]];
-
-                     // Stop and Remove Activity Indicator
-                     UIActivityIndicatorView *indicatorView = (UIActivityIndicatorView *)[_activityIndicators objectForKey:[NSString stringWithFormat:@"%d", i]];
-                     if (indicatorView) {
-                         [indicatorView stopAnimating];
-                         [_activityIndicators removeObjectForKey:[NSString stringWithFormat:@"%d", i]];
-                     }
-                 }];
+                [imageView sd_setImageWithURL:imageUrl completed:^(UIImage * _Nullable image, NSError * _Nullable error, SDImageCacheType cacheType, NSURL * _Nullable imageURL) {
+                    
+                }];
             }
 
             // Add GestureRecognizer to ImageView
@@ -454,21 +423,3 @@
 
 @end
 
-
-
-#pragma mark  - Image source
-
-
-@implementation KIImagePagerDefaultImageSource
-
--(void) imageWithUrl:(NSURL*)url completion:(KIImagePagerImageRequestBlock)completion
-{
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
-        NSData *imageData = [NSData dataWithContentsOfURL:url];
-        dispatch_sync(dispatch_get_main_queue(), ^{
-            if(completion) completion([UIImage imageWithData:imageData],nil);
-        });
-    });
-}
-
-@end

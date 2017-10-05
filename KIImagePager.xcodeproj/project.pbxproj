@@ -29,6 +29,8 @@
 		2AE758D71791721B00EC65B5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2AE758D51791721B00EC65B5 /* InfoPlist.strings */; };
 		2AE758DA1791721B00EC65B5 /* KIImagePagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE758D91791721B00EC65B5 /* KIImagePagerTests.m */; };
 		2AE758E1179172B100EC65B5 /* KIImagePager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A10306E17114BC300333366 /* KIImagePager.m */; };
+		557C9739DC348C5A0A8441C6 /* libPods-KIImagePager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AD9A789CEA2EEABAA3860EA2 /* libPods-KIImagePager.a */; };
+		B61DF0102B2303DBC6863D6D /* libPods-KIImagePagerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A3C7BE25EC5AD25D479AF61 /* libPods-KIImagePagerTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0663ACD32BE5BB39341A747C /* Pods-KIImagePager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KIImagePager.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KIImagePager/Pods-KIImagePager.debug.xcconfig"; sourceTree = "<group>"; };
 		2A10304617114B9100333366 /* KIImagePager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KIImagePager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A10304917114B9100333366 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2A10304B17114B9100333366 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -68,6 +71,11 @@
 		2AE758D61791721B00EC65B5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2AE758D91791721B00EC65B5 /* KIImagePagerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KIImagePagerTests.m; sourceTree = "<group>"; };
 		2AE758DB1791721B00EC65B5 /* KIImagePagerTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KIImagePagerTests-Prefix.pch"; sourceTree = "<group>"; };
+		37AA813D02B176B408168BE1 /* Pods-KIImagePager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KIImagePager.release.xcconfig"; path = "Pods/Target Support Files/Pods-KIImagePager/Pods-KIImagePager.release.xcconfig"; sourceTree = "<group>"; };
+		4170CFC91A6EB9DD08ED9D45 /* Pods-KIImagePagerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KIImagePagerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KIImagePagerTests/Pods-KIImagePagerTests.release.xcconfig"; sourceTree = "<group>"; };
+		4A3C7BE25EC5AD25D479AF61 /* libPods-KIImagePagerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KIImagePagerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD9A789CEA2EEABAA3860EA2 /* libPods-KIImagePager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KIImagePager.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA91B5ACF9C07EB1FDC5B492 /* Pods-KIImagePagerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KIImagePagerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KIImagePagerTests/Pods-KIImagePagerTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +87,7 @@
 				2A10309B171169B300333366 /* QuartzCore.framework in Frameworks */,
 				2A10304A17114B9100333366 /* UIKit.framework in Frameworks */,
 				2A10304C17114B9100333366 /* Foundation.framework in Frameworks */,
+				557C9739DC348C5A0A8441C6 /* libPods-KIImagePager.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +97,7 @@
 			files = (
 				2AE758D01791721B00EC65B5 /* UIKit.framework in Frameworks */,
 				2AE758D11791721B00EC65B5 /* Foundation.framework in Frameworks */,
+				B61DF0102B2303DBC6863D6D /* libPods-KIImagePagerTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +111,7 @@
 				2AE758D21791721B00EC65B5 /* KIImagePagerTests */,
 				2A10304817114B9100333366 /* Frameworks */,
 				2A10304717114B9100333366 /* Products */,
+				B057E4C9420685827815E7AE /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -120,6 +131,8 @@
 				2A10309A171169B300333366 /* QuartzCore.framework */,
 				2A10304917114B9100333366 /* UIKit.framework */,
 				2A10304B17114B9100333366 /* Foundation.framework */,
+				AD9A789CEA2EEABAA3860EA2 /* libPods-KIImagePager.a */,
+				4A3C7BE25EC5AD25D479AF61 /* libPods-KIImagePagerTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -182,6 +195,17 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		B057E4C9420685827815E7AE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0663ACD32BE5BB39341A747C /* Pods-KIImagePager.debug.xcconfig */,
+				37AA813D02B176B408168BE1 /* Pods-KIImagePager.release.xcconfig */,
+				FA91B5ACF9C07EB1FDC5B492 /* Pods-KIImagePagerTests.debug.xcconfig */,
+				4170CFC91A6EB9DD08ED9D45 /* Pods-KIImagePagerTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -189,9 +213,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2A10306917114B9100333366 /* Build configuration list for PBXNativeTarget "KIImagePager" */;
 			buildPhases = (
+				AC0A0DC68CDF0D8C6DA740AA /* [CP] Check Pods Manifest.lock */,
 				2A10304217114B9100333366 /* Sources */,
 				2A10304317114B9100333366 /* Frameworks */,
 				2A10304417114B9100333366 /* Resources */,
+				18A6E5B4B6092CA52CF55332 /* [CP] Embed Pods Frameworks */,
+				0F00E9283DE1CE94619ABCFF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -206,10 +233,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2AE758DE1791721B00EC65B5 /* Build configuration list for PBXNativeTarget "KIImagePagerTests" */;
 			buildPhases = (
+				5E932A2BADBCCEB8AF3054F6 /* [CP] Check Pods Manifest.lock */,
 				2AE758C81791721B00EC65B5 /* Sources */,
 				2AE758C91791721B00EC65B5 /* Frameworks */,
 				2AE758CA1791721B00EC65B5 /* Resources */,
 				2AE758CB1791721B00EC65B5 /* ShellScript */,
+				43CA65E8BC779DE97CEFCD5A /* [CP] Embed Pods Frameworks */,
+				641155A77FCECA8C73B80C5B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -278,6 +308,36 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0F00E9283DE1CE94619ABCFF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KIImagePager/Pods-KIImagePager-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		18A6E5B4B6092CA52CF55332 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KIImagePager/Pods-KIImagePager-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		2AE758CB1791721B00EC65B5 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -290,6 +350,66 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		43CA65E8BC779DE97CEFCD5A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KIImagePagerTests/Pods-KIImagePagerTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5E932A2BADBCCEB8AF3054F6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		641155A77FCECA8C73B80C5B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KIImagePagerTests/Pods-KIImagePagerTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC0A0DC68CDF0D8C6DA740AA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -410,10 +530,12 @@
 		};
 		2A10306A17114B9100333366 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0663ACD32BE5BB39341A747C /* Pods-KIImagePager.debug.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KIImagePager/KIImagePager-Prefix.pch";
 				INFOPLIST_FILE = "KIImagePager/KIImagePager-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -421,10 +543,12 @@
 		};
 		2A10306B17114B9100333366 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37AA813D02B176B408168BE1 /* Pods-KIImagePager.release.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KIImagePager/KIImagePager-Prefix.pch";
 				INFOPLIST_FILE = "KIImagePager/KIImagePager-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -432,6 +556,7 @@
 		};
 		2AE758DC1791721B00EC65B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA91B5ACF9C07EB1FDC5B492 /* Pods-KIImagePagerTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/KIImagePager.app/KIImagePager";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -449,6 +574,7 @@
 		};
 		2AE758DD1791721B00EC65B5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4170CFC91A6EB9DD08ED9D45 /* Pods-KIImagePagerTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/KIImagePager.app/KIImagePager";
 				FRAMEWORK_SEARCH_PATHS = (

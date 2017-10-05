@@ -36,22 +36,11 @@ typedef void(^KIImagePagerImageRequestBlock)(UIImage*image, NSError * error);
 
 @end
 
-#pragma mark  - Image source
-
-@protocol KIImagePagerImageSource <NSObject>
-
--(void) imageWithUrl:(NSURL*)url completion:(KIImagePagerImageRequestBlock)completion;
-
-@end
-
-
 @interface KIImagePager : UIView
 
 // Delegate and Datasource
 @property (weak) IBOutlet id <KIImagePagerDataSource> dataSource;
 @property (weak) IBOutlet id <KIImagePagerDelegate> delegate;
-@property (weak) IBOutlet id <KIImagePagerImageSource> imageSource;
-
 
 // General
 @property (nonatomic) UIViewContentMode contentMode;
