@@ -11,8 +11,8 @@
 #define kOverlayHeight      15
 
 #import "KIImagePager.h"
-#import "UIImageView+WebCache.h"
-#import "UIView+WebCache.h"
+#import <SDWebImage/UIImageView+WebCache.h>
+#import <SDWebImage/UIView+WebCache.h>
 
 @interface KIImagePager () <UIScrollViewDelegate>
 {
